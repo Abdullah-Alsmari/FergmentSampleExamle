@@ -22,7 +22,7 @@ class SecoundFragment : Fragment() {
     private lateinit var letterId: String
 
     private var _binding: FragmentSecoundBinding? = null
-    val INFO="info"
+    val INFO = "info"
 
     private val binding get() = _binding!!
 
@@ -39,20 +39,25 @@ class SecoundFragment : Fragment() {
             letterId = it.getString(INFO).toString()
         }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val text2 = binding.text2
 
 
     }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-   setHasOptionsMenu(true
+        setHasOptionsMenu(
+            true
 
-   ) }
+        )
+    }
 
 
 }
